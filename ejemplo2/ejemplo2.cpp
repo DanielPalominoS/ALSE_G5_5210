@@ -9,6 +9,10 @@ int main() {
     std::cout << "Size of char: " << sizeof(c) << " bytes" << std::endl;
     std::cout << "Address of char: " << c  << std::endl;
     std::cout << "Address of double: " << &b  << std::endl;
-    std::cout << "Address of int: " << &a  << std::endl;+
+    std::cout << "Address of int: " << &a  << std::endl;
+    int d=4,suma;
+    suma=d+a;
+    std::cout <<"Suma: " << suma<< std::endl; 
+    std::cout <<"Suma int+double: " << b+c<< std::endl;
     return 0;
 }
