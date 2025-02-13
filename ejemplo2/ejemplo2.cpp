@@ -14,5 +14,16 @@ int main() {
     suma=d+a;
     std::cout <<"Suma: " << suma<< std::endl; 
     std::cout <<"Suma int+double: " << b+c<< std::endl;
+    int h=2;
+    int k=h++;
+    std::cout <<"k: " << k<< std::endl;
+    int j=++h;
+    std::cout <<"j: " << j<< std::endl;
+    h+=8;//h=h+2+
+    std::cout <<"h: " << h<< std::endl;
+    h*=2;h=h*2;
+    std::cout <<"h: " << h<< std::endl;
+    h=h*2;
+    std::cout <<"h: " << h<< std::endl;
     return 0;
 }
