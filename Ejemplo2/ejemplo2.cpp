@@ -1,91 +1,91 @@
-#include <iostream> // Include the iostream library for input and output
+#include <iostream> // Incluir la biblioteca iostream para entrada y salida
 
 int main()
 {
-    // Declare and initialize variables of different types
-    int a = 42;      // Integer variable
-    double b = 3.14; // Double-precision floating-point variable
-    char c = 'A';    // Character variable
+    // Declarar e inicializar variables de diferentes tipos
+    int a = 42;      // Variable entera
+    double b = 3.14; // Variable de punto flotante de doble precisión
+    char c = 'A';    // Variable de carácter
 
-    // Print the size of each variable type
-    std::cout << "Size of int: " << sizeof(a) << " bytes" << std::endl;
-    std::cout << "Size of double: " << sizeof(b) << " bytes" << std::endl;
-    std::cout << "Size of char: " << sizeof(c) << " bytes" << std::endl;
+    // Imprimir el tamaño de cada tipo de variable
+    std::cout << "Tamaño de int: " << sizeof(a) << " bytes" << std::endl;
+    std::cout << "Tamaño de double: " << sizeof(b) << " bytes" << std::endl;
+    std::cout << "Tamaño de char: " << sizeof(c) << " bytes" << std::endl;
 
-    // Print the address of each variable
-    std::cout << "Address of char: " << static_cast<void *>(&c) << std::endl;
-    std::cout << "Address of double: " << &b << std::endl;
-    std::cout << "Address of int: " << &a << std::endl;
+    // Imprimir la dirección de cada variable
+    std::cout << "Dirección de char: " << static_cast<void *>(&c) << std::endl;
+    std::cout << "Dirección de double: " << &b << std::endl;
+    std::cout << "Dirección de int: " << &a << std::endl;
 
-    // Arithmetic operations
+    // Operaciones aritméticas
     int d = 4;
-    int suma = d + a; // Addition
-    std::cout << "Sum of d and a: " << suma << std::endl;
+    int suma = d + a; // Suma
+    std::cout << "Suma de d y a: " << suma << std::endl;
 
-    double sumDoubleChar = b + c; // Addition of double and char (char is implicitly converted to int)
-    std::cout << "Sum of b and c: " << sumDoubleChar << std::endl;
+    double sumDoubleChar = b + c; // Suma de double y char (char se convierte implícitamente a int)
+    std::cout << "Suma de b y c: " << sumDoubleChar << std::endl;
 
-    // Increment and decrement operators
+    // Operadores de incremento y decremento
     int h = 2;
-    int k = h++; // Post-increment: k is assigned the value of h, then h is incremented
-    std::cout << "Value of k after post-increment: " << k << std::endl;
+    int k = h++; // Post-incremento: k se asigna el valor de h, luego h se incrementa
+    std::cout << "Valor de k después de post-incremento: " << k << std::endl;
 
-    int j = ++h; // Pre-increment: h is incremented, then j is assigned the value of h
-    std::cout << "Value of j after pre-increment: " << j << std::endl;
+    int j = ++h; // Pre-incremento: h se incrementa, luego j se asigna el valor de h
+    std::cout << "Valor de j después de pre-incremento: " << j << std::endl;
 
-    // Compound assignment operators
-    h += 8; // Equivalent to h = h + 8
-    std::cout << "Value of h after h += 8: " << h << std::endl;
+    // Operadores de asignación compuesta
+    h += 8; // Equivalente a h = h + 8
+    std::cout << "Valor de h después de h += 8: " << h << std::endl;
 
-    h *= 2; // Equivalent to h = h * 2
-    std::cout << "Value of h after h *= 2: " << h << std::endl;
+    h *= 2; // Equivalente a h = h * 2
+    std::cout << "Valor de h después de h *= 2: " << h << std::endl;
 
-    h = h * 2; // Multiplication
-    std::cout << "Value of h after h = h * 2: " << h << std::endl;
+    h = h * 2; // Multiplicación
+    std::cout << "Valor de h después de h = h * 2: " << h << std::endl;
 
-    // Additional operators
+    // Operadores adicionales
     int m = 10;
     int n = 3;
-    int mod = m % n; // Modulus operator
-    std::cout << "Modulus of m and n: " << mod << std::endl;
+    int mod = m % n; // Operador de módulo
+    std::cout << "Módulo de m y n: " << mod << std::endl;
 
-    bool isEqual = (a == d); // Equality operator
-    std::cout << "Is a equal to d? " << std::boolalpha << isEqual << std::endl;
+    bool isEqual = (a == d); // Operador de igualdad
+    std::cout << "¿a es igual a d? " << std::boolalpha << isEqual << std::endl;
 
-    bool isGreater = (a > d); // Greater than operator
-    std::cout << "Is a greater than d? " << std::boolalpha << isGreater << std::endl;
+    bool isGreater = (a > d); // Operador mayor que
+    std::cout << "¿a es mayor que d? " << std::boolalpha << isGreater << std::endl;
 
-    // Binary operators
-    int bin1 = 5;                  // 0101 in binary
-    int bin2 = 3;                  // 0011 in binary
-    int binAnd = bin1 & bin2;      // Binary AND
-    int binOr = bin1 | bin2;       // Binary OR
-    int binXor = bin1 ^ bin2;      // Binary XOR
-    int binNot = ~bin1;            // Binary NOT
-    int binShiftLeft = bin1 << 1;  // Left shift
-    int binShiftRight = bin1 >> 1; // Right shift
+    // Operadores binarios
+    int bin1 = 5;                  // 0101 en binario
+    int bin2 = 3;                  // 0011 en binario
+    int binAnd = bin1 & bin2;      // AND binario
+    int binOr = bin1 | bin2;       // OR binario
+    int binXor = bin1 ^ bin2;      // XOR binario
+    int binNot = ~bin1;            // NOT binario
+    int binShiftLeft = bin1 << 1;  // Desplazamiento a la izquierda
+    int binShiftRight = bin1 >> 1; // Desplazamiento a la derecha
 
-    std::cout << "Binary AND of bin1 and bin2: " << binAnd << std::endl;
-    std::cout << "Binary OR of bin1 and bin2: " << binOr << std::endl;
-    std::cout << "Binary XOR of bin1 and bin2: " << binXor << std::endl;
-    std::cout << "Binary NOT of bin1: " << binNot << std::endl;
-    std::cout << "Left shift of bin1: " << binShiftLeft << std::endl;
-    std::cout << "Right shift of bin1: " << binShiftRight << std::endl;
+    std::cout << "AND binario de bin1 y bin2: " << binAnd << std::endl;
+    std::cout << "OR binario de bin1 y bin2: " << binOr << std::endl;
+    std::cout << "XOR binario de bin1 y bin2: " << binXor << std::endl;
+    std::cout << "NOT binario de bin1: " << binNot << std::endl;
+    std::cout << "Desplazamiento a la izquierda de bin1: " << binShiftLeft << std::endl;
+    std::cout << "Desplazamiento a la derecha de bin1: " << binShiftRight << std::endl;
 
-    // Logical operators
+    // Operadores lógicos
     bool log1 = true;
     bool log2 = false;
-    bool logAnd = log1 && log2; // Logical AND
-    bool logOr = log1 || log2;  // Logical OR
-    bool logNot = !log1;        // Logical NOT
+    bool logAnd = log1 && log2; // AND lógico
+    bool logOr = log1 || log2;  // OR lógico
+    bool logNot = !log1;        // NOT lógico
 
-    std::cout << "Logical AND of log1 and log2: " << std::boolalpha << logAnd << std::endl;
-    std::cout << "Logical OR of log1 and log2: " << std::boolalpha << logOr << std::endl;
-    std::cout << "Logical NOT of log1: " << std::boolalpha << logNot << std::endl;
+    std::cout << "AND lógico de log1 y log2: " << std::boolalpha << logAnd << std::endl;
+    std::cout << "OR lógico de log1 y log2: " << std::boolalpha << logOr << std::endl;
+    std::cout << "NOT lógico de log1: " << std::boolalpha << logNot << std::endl;
 
-    // Ternary operator
-    int ternaryResult = (a > d) ? a : d; // If a is greater than d, assign a to ternaryResult, otherwise assign d
-    std::cout << "Ternary operator result (a > d ? a : d): " << ternaryResult << std::endl;
+    // Operador ternario
+    int ternaryResult = (a > d) ? a : d; // Si a es mayor que d, asignar a a ternaryResult, de lo contrario asignar d
+    std::cout << "Resultado del operador ternario (a > d ? a : d): " << ternaryResult << std::endl;
 
-    return 0; // Return 0 to indicate successful execution
+    return 0; // Retornar 0 para indicar ejecución exitosa
 }
