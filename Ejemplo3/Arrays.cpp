@@ -5,6 +5,14 @@ using namespace std;
 
 int main()
 {
+    /*
+    ARRAYS
+    An array is a collection of elements of the same data type.
+    The elements of an array are stored in contiguous memory locations.
+    The size of an array must be a constant value.
+    The elements of an array can be accessed using an index.
+    The index of the first element is 0.
+    */
     // Declare a basic array of integers with size 5
     int arr[5] = {10, 20, 30, 40, 50};
 
@@ -17,6 +25,11 @@ int main()
     // Modify an element in the array
     arr[2] = 100;
     cout << "Modified arr[2]: " << arr[2] << endl;
+    // Access and print elements of the array
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "arr[" << i << "] = " << arr[i] << endl;
+    }
 
     // Declare a std::array of integers with size 5
     array<int, 5> stdArr = {10, 20, 30, 40, 50};
@@ -26,6 +39,15 @@ int main()
     {
         cout << i << endl;
     }
+
+    /*
+    STD ARRAY
+    std::array is a container that encapsulates fixed size arrays.
+    It is a part of the C++ standard library.
+    It is a template class that takes two parameters:
+    1. The data type of the array elements.
+    2. The size of the array.
+    */
 
     // Modify an element in the array
     stdArr[2] = 100;
@@ -43,7 +65,15 @@ int main()
     {
         cout << "Exception: " << e.what() << endl;
     }
-
+    /*
+    VECTORS
+    A vector is a sequence container that encapsulates dynamic size arrays.
+    It is a part of the C++ standard library.
+    It is a template class that takes three parameters:
+    1. The data type of the vector elements.
+    2. The allocator class.
+    3. The size of the vector.
+    */
     // Creating a vector of integers
     vector<int> numbers = {10, 20, 30, 40, 50};
 
