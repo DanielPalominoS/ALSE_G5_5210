@@ -36,10 +36,10 @@ Crea un programa que utilice `new` y `delete` para asignar y liberar memoria par
 ## 4. Arreglos
 
 ### Ejercicio 4.1: Sumar los elementos de un arreglo
-Escribe un programa que declare un arreglo de 5 enteros y calcule la suma de todos sus elementos.
+Escribe un programa que declare un arreglo de 5 enteros y calcule la suma de todos sus elementos, indicando al usuario si es par o impar, positiva o negativa.
 
 ### Ejercicio 4.2: Buscar un elemento en un arreglo
-Crea un programa que pida al usuario un número y luego busque ese número en un arreglo de 10 elementos, imprimiendo si el número está presente o no.
+Crea un programa que pida al usuario un número y luego busque ese número en un arreglo de 10 elementos, imprimiendo si el número está presente o no. En caso de esar presente el número realizar la suma de los elementos del arreglo. En caso de no estar reemplazar el ultimo elemento del arreglo con el valor ingrasado y efectuar la suma de los elementos.
 
 ---
 
